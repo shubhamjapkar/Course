@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div {border: 2px dashed black;margin-bottom: 50px;}
+    .commonColor{color: green}
+    
+    .block {display: block;}
+
+    .inline {display: inline; padding: 10px;} /* this padding will not  apply  for top botton becourse it take parent values  */
+    
+    .inline-block {display: inline-block;} /* This case padding margin not depend on parent,  it work as block as well (we can do styling accordingly) */  
+
+    /* span{ color: blue;}     This color will implement for all span tag */  
+    .inherit p {color: red;}    /* will set color default */
+    .inherit span {color: inherit}  /* If we did not consider this it will take p tag color,  but due to inherit we get blue*/
+    
+    .initial{color: green;}
+    .initial span{color: initial;} /* This will set default value*/
+
+    .table{display: table; width: 100%; border: initial}
+    .row{display: table-row;}
+    .cell{display: table-cell;}
+    
+</style>
+
+<body>
+    <div>
+        <p class="commonColor block">block p</p>
+        <span>span block</span>
+    </div>
+
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur <p class="commonColor inline">inline p</p> adipisicing elit. Voluptates, porro. </span> <!-- This will behave as single row we can not give extra padding for it    -->
+        <span>span inline</span>
+    </div>
+
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur <p class="commonColor inline-block">inline-block p</p> adipisicing elit. Voluptates, porro. </span>
+        <span>span inline-block</span>
+    </div>
+
+    <div class="inherit">
+        <p>Lorem ipsum dolor sit <span class="inherit2">inherit</span>  amet consectetur adipisicing elit. Voluptates, porro. </p> 
+    </div>
+
+    <div class="initial">
+        <p>Lorem ipsum dolor sit <span>inherit</span>  amet consectetur adipisicing elit. Voluptates, porro. </p> 
+    </div>
+
+    <div class="table">
+        <div class="row">
+          <div class="cell">Fruits</div>
+          <div class="cell">Lemurs</div>
+          <div class="cell">Pets</div>
+        </div>
+        <div class="row">
+          <div class="cell">Cashew</div>
+          <div class="cell">Hua hua</div>
+          <div class="cell">Dog</div>
+        </div>
+        <div class="row">
+          <div class="cell">Apple</div>
+          <div class="cell">Diadem Sifaka</div>
+          <div class="cell">Cat</div>
+        </div>
+        <div class="row">
+          <div class="cell">Mango</div>
+          <div class="cell">Ring-tailed</div>
+          <div class="cell">Chicken</div>
+        </div>
+  </div>
+</body>
+
+</html>
