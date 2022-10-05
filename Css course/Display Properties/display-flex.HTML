@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div{border: 1px solid red; margin-top: 80px;}
+    li {list-style-type: none; border: 1px solid green;}
+
+    .flex {display: flex;}
+    .flex  li{margin: 10px; }
+    .flex {flex-direction: column;}
+
+    .flex-wrap{display: flex; flex-flow: row wrap;}  /* flex-wrap row wrap */
+    .flex-wrap li{margin: 10px;}
+
+    .flex-justify-aligh{ display: flex; width: 100px; justify-content: flex-end; align-items: flex-end;}
+
+    .flex-align-content{display: flex; height: 500px; width: 300px; flex-wrap: wrap;} 
+    .flex-align-content li{align-items:  center;}
+    
+    .flex-order{display: flex}
+    .flex-order li:nth-of-type(1)  {order: 4;}
+
+    /* .flex-order li:nth-child(2)  {flex-grow: 4;} */
+
+    .flex-grow{display: flex;}
+    .flex-grow li{width: 50px; height: 100px;}
+    .flex-grow li:nth-child(1) {flex-grow: 1;}
+    .flex-grow li:nth-child(2) {flex-grow: 1;}
+    .flex-grow li:nth-child(3) {flex-grow: 1;}
+
+    .flex-shrink{ width: 500px; display: flex;}
+    .flex-shrink li{flex-basis: 150px;}
+    .flex-shrink li:nth-of-type(1) { flex-shrink: 3;}
+
+    .flex-grow-shrink-basis{width: 2000px; height: 100px; display: flex;}
+    .flex-grow-shrink-basis li{flex-basis: 200px;}
+    .flex-grow-shrink-basis li:nth-of-type(2){flex: 0 0 100px;}  /* grow shrink basis*/
+
+</style>
+
+<body>   
+    <div class="flex">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+    <div class="flex-wrap">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>forth</li>
+    </div>
+
+    <div class="flex-justify-aligh">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+    <div class="flex-align-content">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+
+    <div class="flex-order">
+        <li>first1</li>
+        <li id="myBlueDIV">second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+    
+    <div class="flex-grow">
+        <li>first1</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+        
+    <div class="flex-shrink">
+        <li>first11</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+    
+
+    <div class="flex-grow-shrink-basis">
+        <li>first flex-grow-shrink-basis</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+</body>
+
+</html>

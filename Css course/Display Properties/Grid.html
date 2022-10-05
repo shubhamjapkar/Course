@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div{margin-bottom: 20px;}
+    li{list-style-type: none ;}
+
+    .grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));}
+
+    .grid-row{display: grid; grid-template-columns: repeat(6, 1fr); height: 200px;}
+    .grid-row li:nth-of-type(1){ grid-row: 4/6;  grid-column: 3/5;}
+
+    .grid-row{border: 2px solid green;}
+
+    .grid-auto-column{display: grid; grid-auto-flow: column; grid-auto-rows: 100px;}
+
+
+</style>
+<body>
+    <div class="grid">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+
+    <div class="grid-row">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+
+    <div class="grid-auto-column">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </div>
+</body>
+</html>
