@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0; padding: 0; box-sizing: border-box;}
+        .sec-details{width: 700px; margin: 20px auto; border: 3px solid black;}
+        .sec-details h1{text-align: center; background-color: #c4c4c4; text-transform: uppercase; font-size: 20px; padding: 10px 0px; font-weight: bold; word-spacing: 2px;}
+        .price-tag{font-size: 22px;}
+        .shipping-txt{font-weight: bold; text-transform: uppercase; font-size: 12px; color: gray;}
+        .sec-details .detail-text {margin: 10px 0;}
+        .sec-details .more-info{text-decoration: underline}
+        .sec-details .more-info::first-letter{display: inline-block; text-transform: capitalize;}
+        /* .sec-details .more-info::first-letter{text-transform: uppercase;} */
+        .colors{margin: 15px 0px 10px 0px;}
+        .colors span{ display: inline-block; padding: 2px 10px; margin: 10px 15px 10px 0px;}
+        .black{background-color: black;}
+        .blue{background-color: blue;}
+        .red{background-color: red;}
+        .yellow{background-color: yellow;}
+        .green{background-color: green;}
+        .chocolate{background-color: chocolate;}
+        .text-upper{text-transform: uppercase; font-size: 15px;}
+        .ul-list{margin-top: 20px; padding: 0px 17px;}
+        .ul-list li{margin: 20px 0; text-transform: capitalize;}
+        .add-to-cart{background-color: black; color: white; text-transform: uppercase; width: 100%; padding: 10px 0; }
+
+        /* h5{color: gray; font-size: 20px;} */
+        /* span::first-letter{text-transform: capitalize;} */
+        .more-info::first-letter{text-transform: capitalize;}
+        .sec-details{position: relative;}
+        .sec-details::before{content: "SALE"; background-color: #ce0101; position: absolute; left: -40px; top: -11px; padding: 5px 15px; color: white; font-size: 15px; letter-spacing: 2px}
+        p::first-letter{text-transform: capitalize;}
+
+        .box-style{float: left;}
+        .box-style-sub{background-color: red;}
+    </style>
+</head>
+<body>
+    <div class="main-body">
+    <section class="sec-details">
+        <h1>Convert chuck taylor all star low top</h1>
+        <img src="https://picsum.photos/200/200" alt="">
+        <h3 class="price-tag">$65.00</h3>
+        <span class="shipping-txt">free shipping</span>
+        <p class="detail-text">ready to dress up and down, these classic canvas chunk are an everyday wordrobe staple</p>
+        <span class="more-info">more information &#8594;</span>
+        <div class="colors">
+            <span class="black">&nbsp;</span>
+            <span class="blue">&nbsp;</span>
+            <span class="red">&nbsp;</span>
+            <span class="yellow">&nbsp;</span>
+            <span class="green">&nbsp;</span>
+            <span class="chocolate">&nbsp;</span>
+        </div>
+        <h3 class="text-upper">product details</h3>
+        <ul class="ul-list">
+            <li>Lightweight, durable canvas sneaker</li>
+            <li>lightly padded footbed for added confort</li>
+            <li>iconic chunk taylor ankle patch</li>
+        </ul>
+        <button class="add-to-cart">add to cart</button>
+    </section>
+</div>
+</body>
+</html> 
