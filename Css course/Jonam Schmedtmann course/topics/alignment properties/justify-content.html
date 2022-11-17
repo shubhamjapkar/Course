@@ -7,9 +7,44 @@
     <title>Document</title>
 </head>
 <style>
+    *{padding: 0; margin: 0;}
+    body{box-sizing: border-box;}
    .contener{display: flex;}
    .alignment{display: grid; grid-template-columns: repeat(3, 50px); grid-template-rows: repeat(1, 50px); background-color: gray;}
+
+   .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+   }
+
+.flex-item {
+  background: tomato;
+  padding: 10px;
+  border: 5px solid red;
+  
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex1{flex-basis: 100px;}
+.flex3{width: 100px;}
    
+.flex-container:nth-of-type(3) {
+  flex-shrink: 3;
+}
+
 </style>
 <body>
    <div class="contener">
@@ -19,5 +54,14 @@
         <div class="content">Itom-3</div>
     </div>
    </div>
+
+   <ul class="flex-container">
+        <li class="flex-item flex1">1</li>
+        <li class="flex-item flex2">2</li>
+        <li class="flex-item flex3">3</li>
+        <li class="flex-item flex4">4</li>
+        <li class="flex-item flex5">5</li>
+        <li class="flex-item flex6">6</li>
+  </ul>
 </body>
 </html>
