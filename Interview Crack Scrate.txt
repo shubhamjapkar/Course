@@ -1,4 +1,7 @@
 HTML
 CSS
 React.js
+node.js
+mogodb
+mysql
 DSA
